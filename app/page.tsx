@@ -14,7 +14,7 @@ export default function LoginForm() {
     <main className="relative bg-gradient-to-br from-purple-400 via-violet-500 to-indigo-600 h-full min-h-screen text-white overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/abstract-pattern.jpg" 
+          src="/abstract-pattern.jpg"
           alt="Background pattern"
           layout="fill"
           objectFit="cover"
@@ -32,9 +32,7 @@ export default function LoginForm() {
               alt="logo"
               className="h-16 w-20"
             />
-            <h1 className="text-3xl font-bold md:text-5xl">
-              DopeList
-            </h1>
+            <h1 className="text-3xl font-bold md:text-5xl">DopeList</h1>
           </Link>
           <div className="hidden lg:flex items-center">
             <form action={signInAction}>
@@ -45,8 +43,7 @@ export default function LoginForm() {
 
         <div className="text-center mb-12">
           <h1 className="text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400 animate-text">
-            Your Todo List{" "}
-            <br className="hidden lg:inline-block" />
+            Your Todo List <br className="hidden lg:inline-block" />
             Done Right!
           </h1>
           <h2 className="text-2xl md:text-3xl font-light">
@@ -60,8 +57,9 @@ export default function LoginForm() {
         <div className="text-center mb-12 p-4 bg-gray-800 rounded-lg">
           <p className="text-lg font-medium">
             To test this website, you can use the email{" "}
-            <span className="font-semibold">testingdopelist@gmail.com</span>{" "}
-            and password <span className="font-semibold">dopelist@123</span>, or use your own email.
+            <span className="font-semibold">testingdopelist@gmail.com</span> and
+            password <span className="font-semibold">dopelist@123</span>, or use
+            your own email.
           </p>
         </div>
 
@@ -73,7 +71,14 @@ export default function LoginForm() {
             className="text-xl px-8 py-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-900 transition-colors duration-300"
             variant={"outline"}
           >
-            Give me a star on Github ⭐️
+            <a
+              href="https://github.com/aniketmore-pixel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl px-8 py-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-900 transition-colors duration-300"
+            >
+              Give me a star on Github ⭐️
+            </a>
           </Button>
         </div>
 
@@ -89,11 +94,7 @@ export default function LoginForm() {
             </a>
           </div>
           <div className="flex space-x-6">
-            <a
-              className="group"
-              aria-label="Instagram"
-              href="https://x.com/"
-            >
+            <a className="group" aria-label="Instagram" href="https://x.com/">
               <svg
                 aria-hidden="true"
                 className="h-7 w-7 fill-gray-200 group-hover:fill-blue-400 transition-colors duration-300"
@@ -130,12 +131,7 @@ function GetStartedButton() {
       className="relative flex items-center justify-center px-8 py-4 mb-2 bg-gradient-to-br from-pink-500 to-yellow-500 text-white font-semibold text-xl rounded-full transition-transform transform hover:scale-105"
     >
       <span className="flex items-center gap-2">
-        {pending ? (
-          <Loader className="w-6 h-6" />
-        )
-        : (
-          "Sign in with Google"
-        )}
+        {pending ? <Loader className="w-6 h-6" /> : "Sign in with Google"}
       </span>
     </button>
   );
