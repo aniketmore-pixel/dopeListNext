@@ -75,7 +75,7 @@ export default function LoginForm() {
               href="https://github.com/aniketmore-pixel"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-xl px-8 py-4 bg-transparent border-2 border-transparent hover:border-white hover:bg-white hover:text-purple-900 transition-colors duration-300 rounded-full"
+              className="inline-block text-xl px-8 py-4 bg-transparent border-2 border-transparent rounded-full hover:border-white hover:bg-white hover:text-purple-900 transition-all duration-300"
             >
               Give me a star on Github ⭐️
             </a>
