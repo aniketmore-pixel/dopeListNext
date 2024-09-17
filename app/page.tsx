@@ -12,7 +12,16 @@ import { useFormStatus } from "react-dom";
 export default function LoginForm() {
   return (
     <main className="relative bg-gradient-to-br from-purple-400 via-violet-500 to-indigo-600 h-full min-h-screen text-white overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/abstract-pattern.png')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0">
+        <Image
+          src="/abstract-pattern.jpg" 
+          alt="Background pattern"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="opacity-40"
+        />
+      </div>
       <div className="container mx-auto py-12 md:px-10 flex flex-col items-center justify-center relative z-10">
         <div className="flex items-center justify-between w-full mb-8">
           <Link className="flex items-center gap-2" href="/loggedin">
@@ -43,7 +52,7 @@ export default function LoginForm() {
           <h2 className="text-2xl md:text-3xl font-light">
             <span className="font-semibold">Organize your tasks</span> and
             <br className="hidden lg:inline-block" />
-            <span className="font-semibold">stay on top </span> with ease.
+            <span className="font-semibold">stay on top</span> with ease.
           </h2>
         </div>
 
