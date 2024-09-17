@@ -71,14 +71,16 @@ export default function LoginForm() {
             className="text-xl px-8 py-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-900 transition-colors duration-300"
             variant={"outline"}
           >
-            <a
-              href="https://github.com/aniketmore-pixel"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-xl px-8 py-4 bg-transparent border-2 border-transparent rounded-full"
-            >
-              Give me a star on Github ⭐️
-            </a>
+            <div className="inline-block border-2 border-transparent rounded-full hover:border-white hover:bg-white transition-all duration-300">
+              <a
+                href="https://github.com/aniketmore-pixel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-xl px-8 py-4 bg-transparent rounded-full hover:text-purple-900"
+              >
+                Give me a star on Github ⭐️
+              </a>
+            </div>
           </Button>
         </div>
 
