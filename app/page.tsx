@@ -65,18 +65,19 @@ export default function LoginForm() {
           </form>
 
           <Button
-            className="text-lg px-6 py-3 border-2 border-purple-300 rounded-full text-purple-100 hover:bg-purple-100 hover:text-purple-900 transition duration-300 font-semibold"
-            variant="outline"
-          >
-            <a
-              href="https://github.com/aniketmore-pixel"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              ⭐️ Give me a star on GitHub
-            </a>
-          </Button>
+  className="text-lg px-6 py-3 border-2 border-white rounded-full bg-transparent text-purple-900 hover:bg-white hover:text-purple-900 transition duration-300"
+  variant="outline"
+>
+  <a
+    href="https://github.com/aniketmore-pixel"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2"
+  >
+    ⭐️ Star me on GitHub
+  </a>
+</Button>
+
         </div>
 
         {/* Footer */}
