@@ -48,16 +48,17 @@ export default function LoginForm() {
 
         {/* Hero section */}
         <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-fuchsia-400 to-violet-400 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-            Your Todo List <br className="hidden lg:inline-block" />
-            Done Right!
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-light text-gray-200">
-            <span className="font-semibold">Organize your tasks</span> and{" "}
-            <br className="hidden lg:inline-block" />
-            <span className="font-semibold">stay on top</span> with ease.
-          </h2>
-        </div>
+  <h1 className="text-5xl md:text-7xl font-extrabold leading-tight md:leading-[1.1] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-fuchsia-400 to-violet-400 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
+    Your Todo List <br className="hidden lg:inline-block" />
+    Done Right!
+  </h1>
+  <h2 className="text-2xl md:text-3xl font-light text-gray-200">
+    <span className="font-semibold">Organize your tasks</span> and{" "}
+    <br className="hidden lg:inline-block" />
+    <span className="font-semibold">stay on top</span> with ease.
+  </h2>
+</div>
+
 
         {/* CTA buttons */}
         <div className="flex flex-col items-center gap-6 mb-16">
