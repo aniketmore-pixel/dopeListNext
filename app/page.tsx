@@ -3,7 +3,6 @@
 import { signInAction } from "@/actions/auth-action";
 import { Button } from "@/components/ui/button";
 import dlLogo from "@/public/logo/dllogo.png";
-import clsx from "clsx";
 import { Loader } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,7 +47,7 @@ export default function LoginForm() {
 
         {/* Hero section */}
         <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-yellow-400 to-orange-500 animate-text">
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-yellow-300 to-orange-400 animate-text drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
             Your Todo List <br className="hidden lg:inline-block" />
             Done Right!
           </h1>
@@ -66,7 +65,7 @@ export default function LoginForm() {
           </form>
 
           <Button
-            className="text-lg px-6 py-3 border-2 border-white rounded-full hover:bg-white hover:text-purple-900 transition duration-300"
+            className="text-lg px-6 py-3 border-2 border-white rounded-full text-white hover:bg-white hover:text-purple-900 transition duration-300 font-semibold"
             variant="outline"
           >
             <a
@@ -75,7 +74,7 @@ export default function LoginForm() {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              ⭐️ Give me a star on Github
+              ⭐️ Give me a star on GitHub
             </a>
           </Button>
         </div>
@@ -142,7 +141,7 @@ function GoogleSignInButton() {
   return (
     <button
       disabled={pending}
-      className="relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 transition"
+      className="relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300 transition"
     >
       {pending ? <Loader className="w-5 h-5 animate-spin" /> : "Sign in with Google"}
     </button>
