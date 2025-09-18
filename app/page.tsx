@@ -85,13 +85,13 @@ export default function LoginForm() {
         {/* Footer */}
         <footer className="mt-12 flex flex-col items-center border-t border-white/20 pt-6 text-center text-sm text-gray-300">
           <div className="mb-4">
-            Powered by{" "}
+            Created by{" "}
             <a
               href="https://convex.dev/c/todovex"
               target="_blank"
               className="font-semibold text-purple-300 hover:text-purple-200 transition-colors duration-300"
             >
-              Convex
+              Aniket More
             </a>
           </div>
 
