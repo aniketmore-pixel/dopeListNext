@@ -10,14 +10,14 @@ import { useFormStatus } from "react-dom";
 
 export default function LoginForm() {
   return (
-    <main className="relative bg-gradient-to-br from-purple-500 via-violet-600 to-indigo-700 h-full min-h-screen text-white overflow-hidden">
+    <main className="relative bg-gradient-to-br from-indigo-900 via-purple-800 to-violet-900 h-full min-h-screen text-white overflow-hidden">
       {/* Subtle background overlay */}
       <div className="absolute inset-0">
         <Image
           src="/abstract-pattern.jpg"
           alt="Background pattern"
           fill
-          className="object-cover object-center opacity-20"
+          className="object-cover object-center opacity-10"
         />
       </div>
 
@@ -47,11 +47,11 @@ export default function LoginForm() {
 
         {/* Hero section */}
         <div className="text-center max-w-3xl mb-16">
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-yellow-300 to-orange-400 animate-text drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-fuchsia-400 to-violet-400 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
             Your Todo List <br className="hidden lg:inline-block" />
             Done Right!
           </h1>
-          <h2 className="text-2xl md:text-3xl font-light text-gray-100">
+          <h2 className="text-2xl md:text-3xl font-light text-gray-200">
             <span className="font-semibold">Organize your tasks</span> and{" "}
             <br className="hidden lg:inline-block" />
             <span className="font-semibold">stay on top</span> with ease.
@@ -65,7 +65,7 @@ export default function LoginForm() {
           </form>
 
           <Button
-            className="text-lg px-6 py-3 border-2 border-white rounded-full text-white hover:bg-white hover:text-purple-900 transition duration-300 font-semibold"
+            className="text-lg px-6 py-3 border-2 border-purple-300 rounded-full text-purple-100 hover:bg-purple-100 hover:text-purple-900 transition duration-300 font-semibold"
             variant="outline"
           >
             <a
@@ -80,13 +80,13 @@ export default function LoginForm() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 flex flex-col items-center border-t border-white/30 pt-6 text-center text-sm text-gray-200">
+        <footer className="mt-12 flex flex-col items-center border-t border-white/20 pt-6 text-center text-sm text-gray-300">
           <div className="mb-4">
             Powered by{" "}
             <a
               href="https://convex.dev/c/todovex"
               target="_blank"
-              className="font-semibold text-pink-300 hover:text-pink-200 transition-colors duration-300"
+              className="font-semibold text-purple-300 hover:text-purple-200 transition-colors duration-300"
             >
               Convex
             </a>
@@ -96,7 +96,7 @@ export default function LoginForm() {
             <a className="group" aria-label="Twitter/X" href="https://x.com/">
               <svg
                 aria-hidden="true"
-                className="h-6 w-6 fill-gray-300 group-hover:fill-blue-400 transition-colors"
+                className="h-6 w-6 fill-gray-400 group-hover:fill-blue-400 transition-colors"
               >
                 <path d="M8.29 20.251c7.547..."></path>
               </svg>
@@ -108,7 +108,7 @@ export default function LoginForm() {
             >
               <svg
                 aria-hidden="true"
-                className="h-6 w-6 fill-gray-300 group-hover:fill-gray-900 transition-colors"
+                className="h-6 w-6 fill-gray-400 group-hover:fill-gray-100 transition-colors"
               >
                 <path d="M12 2C6.477 2..."></path>
               </svg>
@@ -128,7 +128,7 @@ function GetStartedButton() {
     <button
       disabled={pending}
       type="submit"
-      className="relative flex items-center justify-center px-10 py-4 bg-gradient-to-br from-pink-500 to-yellow-500 text-white font-semibold text-xl rounded-full transition transform hover:scale-105 shadow-lg"
+      className="relative flex items-center justify-center px-10 py-4 bg-gradient-to-br from-purple-600 to-violet-500 text-white font-semibold text-xl rounded-full transition transform hover:scale-105 shadow-lg hover:shadow-purple-500/40"
     >
       {pending ? <Loader className="w-6 h-6 animate-spin" /> : "Sign in with Google"}
     </button>
@@ -141,7 +141,7 @@ function GoogleSignInButton() {
   return (
     <button
       disabled={pending}
-      className="relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300 transition"
+      className="relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-br from-purple-600 to-violet-500 hover:from-purple-500 hover:to-violet-400 focus:ring-4 focus:outline-none focus:ring-purple-300 transition"
     >
       {pending ? <Loader className="w-5 h-5 animate-spin" /> : "Sign in with Google"}
     </button>
