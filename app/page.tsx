@@ -25,7 +25,7 @@ export default function LoginForm() {
       <div className="container mx-auto py-12 md:px-10 flex flex-col items-center justify-center relative z-10">
         {/* Header */}
         <div className="flex items-center justify-between w-full mb-12">
-          
+          <Link className="flex items-center gap-3" href="https://dope-list-next.vercel.app">
             <Image
               src={dlLogo}
               width={50}
@@ -36,6 +36,7 @@ export default function LoginForm() {
             <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight">
               DopeList
             </h1>
+          </Link>
      
 
           <div className="hidden lg:flex items-center">
