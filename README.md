@@ -2,7 +2,7 @@
 
 **DopeList** is a productivity and task management web application built with **Next.js 14**, **React 18**, and **Convex** for the backend. It helps users organize tasks, subtasks, projects, and labels efficiently, with features for tracking due dates, priorities, and completion status.
 
-[Watch this demo video]()
+[Watch this demo video](https://drive.google.com/file/d/1AIntQdAA9icbzCNsN4Y4kNGbWTEdMM9o/view?usp=sharing)
 
 ---
 
@@ -11,9 +11,7 @@
 > <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/3a7d28ce-8c12-4370-8053-59f42b76b129" />
 > <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/98f6f3fc-3c4d-43f4-b51f-f06603dab176" />
 > <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/2271355a-7803-483e-a1ba-4997c43e1620" />
-
-
-
+> <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/2cd36298-7960-4a08-b54a-ef85600ba786" />
 
 ---
 
